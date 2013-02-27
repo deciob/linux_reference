@@ -6,5 +6,8 @@ for f in rasters-2012.cc_*_2013_raster/metadata.json; do cp ${f} ${f}.bk && sed 
 
 for FILE in *.jpg; do mv "$FILE" $(echo "$FILE" | sed 's/2_/1_/'); done
 
+# delete all coffee files within the js directory
+find js -name '*.coffee' -delete
+
 
 ```
