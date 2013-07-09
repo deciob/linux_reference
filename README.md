@@ -11,3 +11,11 @@ find js -name '*.coffee' -delete
 
 
 ```
+
+
+### Some ruby-rails stuff
+
+```rb
+      debugger
+      @user.errors.to_a
+```
