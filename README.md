@@ -9,6 +9,10 @@ for FILE in *.jpg; do mv "$FILE" $(echo "$FILE" | sed 's/2_/1_/'); done
 # delete all coffee files within the js directory
 find js -name '*.coffee' -delete
 
+# Replace all term.description to term.definition in /home/deciob/dev/biodiversity-a-to-z/app
+find /home/deciob/dev/biodiversity-a-to-z/app -type f -exec \
+ > sed -i 's/term.description/term.definition/g' {} + 
+
 
 ```
 
